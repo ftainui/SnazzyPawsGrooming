@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Snazzy Paws Grooming booking</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <nav aria-label="Main navigation">
+            <div class="nav-left">
+                <div class="hamburger" id="hamburger" aria-label="Menu">&#9776;</div>
+                <div class="logo">
+                    <img src="images/LogoNoBg.png" alt="Snazzy Paws Grooming Logo">
+                </div>
+            </div>
+
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="Services.html">Services</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="Booking.html">Booking</a>
+                <a href="Contact.html">Contact</a>
+            </div>
+        </nav>
+
+        <header>
+            <h1 id="page-title">Bookings</h1>
+        </header>
+
+        <main>
+            <h2 id="select-service">Select a service</h2>
+
+            <form class="booking-form" aria-label="Select one or more services">
+                <fieldset>
+                    <legend>Choose one or more grooming services</legend>
+
+                    <div class="service">
+                        <label class="service-label" for="service-bath-brush">
+                            <span class="service-name"><strong>Bath and brush</strong></span>
+                            <span class="service-desc">Shampoo, blow-dry, brush-out and nail trim.</span>
+                        </label>
+                        <div class="service-price">$25–$50</div>
+                        <input type="checkbox" id="service-bath-brush" class="service-checkbox" name="service[]" value="Bath and brush">
+                    </div>
+    
+                    <div class="service">
+                        <label class="service-label" for="service-haircut">
+                            <span class="service-name"><strong>Haircut</strong></span>
+                            <span class="service-desc">Bath, blow-dry, haircut (based on breed standard or owner's preference) and nail trim.</span>
+                        </label>
+                        <div class="service-price">$45–$85</div>
+                        <input type="checkbox" id="service-haircut" class="service-checkbox" name="service[]" value="Haircut">
+                    </div>
+
+                    <div class="service">
+                        <label class="service-label" for="service-nail-trim">
+                            <span class="service-name"><strong>Nail trim</strong></span>
+                            <span class="service-desc">Trim nails and, in some cases, filing.</span>
+                        </label>
+                        <div class="service-price">$10–$20</div>
+                        <input type="checkbox" id="service-nail-trim" class="service-checkbox" name="service[]" value="Nail trim">
+                    </div>
+    
+                    <div class="service">
+                        <label class="service-label" for="service-ear-cleaning">
+                            <span class="service-name"><strong>Ear cleaning</strong></span>
+                            <span class="service-desc">Gentle cleaning of ears to remove wax and debris.</span>
+                        </label>
+                        <div class="service-price">$10–$15</div>
+                        <input type="checkbox" id="service-ear-cleaning" class="service-checkbox" name="service[]" value="Ear cleaning">
+                    </div>
+    
+                    <div class="service">
+                        <label class="service-label" for="service-teeth-brushing">
+                            <span class="service-name"><strong>Teeth brushing</strong></span>
+                            <span class="service-desc">Brushing with pet-safe toothpaste.</span>
+                        </label>
+                        <div class="service-price">$10–$15</div>
+                        <input type="checkbox" id="service-teeth-brushing" class="service-checkbox" name="service[]" value="Teeth brushing">
+                    </div>
+    
+                    <div class="service">
+                        <label class="service-label" for="service-de-shedding">
+                            <span class="service-name"><strong>De-shedding treatment</strong></span>
+                            <span class="service-desc">Special shampoo and undercoat removal (in addition to bath or haircut).</span>
+                        </label>
+                        <div class="service-price">$20–$40<br><small>Additional</small></div>
+                        <input type="checkbox" id="service-de-shedding" class="service-checkbox" name="service[]" value="De-shedding treatment">
+                    </div>
+    
+                    <div class="service">
+                        <label class="service-label" for="service-flea-tick-treatment">
+                            <span class="service-name"><strong>Flea and tick treatment</strong></span>
+                            <span class="service-desc">Shampoo and preventative treatment.</span>
+                        </label>
+                        <div class="service-price">$15–$30</div>
+                        <input type="checkbox" id="service-flea-tick-treatment" class="service-checkbox" name="service[]" value="Flea and tick treatment">
+                    </div>
+    
+                    <div class="service">
+                        <label class="service-label" for="service-spa-package">
+                            <span class="service-name"><strong>Spa package</strong></span>
+                            <span class="service-desc">Bath, haircut, teeth brushing, nail trim and sometimes special scents or conditioners.</span>
+                        </label>
+                        <div class="service-price">$75–$150</div>
+                        <input type="checkbox" id="service-spa-package" class="service-checkbox" name="service[]" value="Spa package">
+                    </div>
+    
+                    <div class="service">
+                        <label class="service-label" for="service-express">
+                            <span class="service-name"><strong>Express service</strong></span>
+                            <span class="service-desc">For dogs that need minimal grooming or a quick touch-up.</span>
+                        </label>
+                        <div class="service-price">$15–$25<br><small>Additional</small></div>
+                        <input type="checkbox" id="service-express" class="service-checkbox" name="service[]" value="Express service">
+                    </div>
+    
+                    <div class="service">
+                        <label class="service-label" for="service-medicated-bath">
+                            <span class="service-name"><strong>Medicated bath</strong></span>
+                            <span class="service-desc">For pets with skin conditions requiring special shampoo.</span>
+                        </label>
+                        <div class="service-price">$20–$40<br><small>Additional</small></div>
+                        <input type="checkbox" id="service-medicated-bath" class="service-checkbox" name="service[]" value="Medicated bath">
+                    </div>
+    
+                    <div class="service">
+                        <label class="service-label" for="service-special-breed-cuts">
+                            <span class="service-name"><strong>Special-breed cuts</strong></span>
+                            <span class="service-desc">Breed-specific cuts or styling based on customer preference.</span>
+                        </label>
+                        <div class="service-price">Quoted</div>
+                        <input type="checkbox" id="service-special-breed-cuts" class="service-checkbox" name="service[]" value="Special-breed cuts">
+                    </div>
+    
+                    <div class="service">
+                        <label class="service-label" for="service-puppy-package">
+                            <span class="service-name"><strong>Puppy package</strong></span>
+                            <span class="service-desc">Introductory grooming services tailored for puppies.</span>
+                        </label>
+                        <div class="service-price">$30–$60</div>
+                        <input type="checkbox" id="service-puppy-package" class="service-checkbox" name="service[]" value="Puppy package">
+                    </div>
+    
+                    <div class="service">
+                        <label class="service-label" for="service-senior-package">
+                            <span class="service-name"><strong>Senior dog package</strong></span>
+                            <span class="service-desc">Grooming services tailored for older dogs, often with special handling and care.</span>
+                        </label>
+                        <div class="service-price">$40–$80</div>
+                        <input type="checkbox" id="service-senior-package" class="service-checkbox" name="service[]" value="Senior dog package">
+                    </div>
+    
+                    <div class="service">
+                        <label class="service-label" for="service-full-groom-package">
+                            <span class="service-name"><strong>Full grooming package</strong></span>
+                            <span class="service-desc">Comprehensive grooming service, including bath, haircut, teeth brushing, nail trim and ear cleaning.</span>
+                        </label>
+                        <div class="service-price">$60–$120</div>
+                        <input type="checkbox" id="service-full-groom-package" class="service-checkbox" name="service[]" value="Full grooming package">
+                    </div>
+                </fieldset>
+            
+                <h2 id="owner-pet-info">Owner and Pet Information</h2>
+                <div class="form-grid" aria-labelledby="owner-pet-info">
+                    <div class="form-column">
+                        <label for="ownerName">Owner's Name:
+                            <input type="text" id="ownerName" name="ownerName" autocomplete="name">
+                        </label>
+      
+                        <label for="mobile">Mobile:
+                            <input type="tel" id="mobile" name="mobile">
+                        </label>
+      
+                        <label for="email">Email:
+                            <input type="email" id="email" name="email" autocomplete="email">
+                        </label>
+                    </div>
+    
+                    <div class="form-column">
+                        <label for="petName">Pet's Name:
+                            <input type="text" id="petName" name="petName">
+                        </label>
+      
+                        <label for="breed">Breed:
+                            <input type="text" id="breed" name="breed">
+                        </label>
+      
+                        <label for="petAge">Age:
+                            <input type="text" id="petAge" name="age">
+                        </label>
+                    </div>
+                </div>
+  
+                <div class="extra-info">
+                    <label class="message">Let us know your preferred date, time and any other additional details</label><br>
+                    <textarea id="dateTime" name="dateTime" rows="5" cols="30" required></textarea>
+                </div>
+
+                <div class="form-submit">
+                    <button type="submit" aria-label="Submit appointment request">Submit Appointment</button>
+                </div>
+                <br>
+                <br>
+            </form>
+
+            <section aria-labelledby="booking-info">
+                <h2 id="booking-info">Booking information</h2>
+                <h3>Toileting</h3>
+                <p>Please ensure your pet has had a toilet break before arriving to help them stay comfortable.</p>
+
+                <h3>Vaccinations</h3>
+                <p>All pets must be up to date with their vaccinations for the safety of all animals.</p>
+
+                <h3>Health Concerns</h3>
+                <p>Inform us of any medical conditions, sensitivities, or recent injuries in advance.</p>
+
+                <h3>Matting</h3>
+                <p>Severely matted coats may need shaving or extra grooming time. Additional charges may apply.</p>
+
+                <h3>Drop-off and Pickup</h3>
+                <p>Be on time for both drop-off and pickup to keep appointments running smoothly.</p>
+
+                <h3>Cancellations</h3>
+                <p>Please provide at least 24 hours’ notice for cancellations or changes to your appointment.</p>
+
+                <h3>Aggressive Behavior</h3>
+                <p>We may refuse service to pets that display aggressive or dangerous behavior.</p>
+
+                <h3>Special Requests</h3>
+                <p>Mention any grooming preferences or styles at the time of booking or drop-off.</p>
+            </section>
+        </main>
+
+        <footer>
+            <div role="navigation" aria-label="Footer navigation">
+                <a href="index.html">Home</a>
+                <a href="Services.html">Services</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="Booking.html">Booking</a>
+                <a href="Contact.html">Contact</a>
+            </div>
+
+            <div>
+                <p>Opening hours: Monday to Saturday 9am - 5pm</p>
+            </div>
+
+            <div>
+                <a href="http://www.facebook.com/SnazzyPawsGrooming" target="_blank">Facebook</a>
+                <a href="http://www.instagram.com/SnazzyPawsGrooming" target="_blank">Instagram</a>
+            </div>           
+        </footer>  
+    </body>
+ </html>
